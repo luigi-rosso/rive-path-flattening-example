@@ -83,7 +83,7 @@
             artboard.draw(renderer);
 
             // We know the path is at index 2 in this file.
-            const flatPath = artboard.flattenPath(2);
+            const flatPath = artboard.flattenPath(2, false);
             const drawPath = new Path2D();
 
             for (let i = 0; i < flatPath.length(); i++)
